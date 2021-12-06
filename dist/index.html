@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="nav-container">
+        <input type="text" id="search-input" placeholder="City">
+        <!-- <i class="fas fa-search-location" id="search-icon"></i> -->
+        <input type="button" id="search-icon" value="search">
+    </div>
+
+    <div class="cities-container"></div>
+
+    <!-- <input type="button" id="refresh" value="refresh"> -->
+
+
+    <script id="city-template" type="text/x-handlebars-template">
+        {{#each city}}
+        <div class="city-container" data-name={{name}}>
+            {{#if saved}}
+            <i class="fas fa-minus-circle remove">remove</i> {{else}}
+            <i class="fas fa-plus-circle save">save</i> {{/if}}
+
+            <div class="state-container">
+                <h3 class="temperature">{{temperature}}°C</h3>
+                <h4 class="name">{{name}}</h4>
+            </div>
+            <div class="state-container">
+                <img class="conditionPic" src="http://openweathermap.org/img/wn/{{conditionPic}}@2x.png">
+                <h4 class="conditions">{{condition}}</h4>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="./handlebars/dist/handlebars.js"></script>
+    <script src="TempManager.js"></script>
+    <script src="render.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

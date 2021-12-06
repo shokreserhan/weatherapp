@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
+    "handlebars": "^4.7.7",
+    "jquery": "^3.6.0",
+    "mongoose": "^6.0.14",
+    "urllib": "^2.38.0"
+  },
+  "description": ""
+}
