@@ -10,7 +10,7 @@
 
 ## Screenshots
 
-![weatherapp](screenshots\weatherappScreenshot.PNG)
+![image](https://raw.githubusercontent.com/shokreserhan/weatherapp/main/screenshots/weatherappScreenshot.PNG)
 
 ## Available Commands
 
