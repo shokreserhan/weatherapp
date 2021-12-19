@@ -10,7 +10,7 @@
 
 ## Screenshots
 
-![weatherappScreenshot](screenshots\weatherappScreenshot.PNG "weatherappScreenshot")
+![weatherapp](screenshots\weatherappScreenshot.PNG)
 
 ## Available Commands
 
